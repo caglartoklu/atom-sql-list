@@ -1,0 +1,32 @@
+{
+  "name": "atom-sql-list",
+  "main": "./lib/sql-list",
+  "version": "0.0.0",
+  "description": "Various SQL code generators and processors for selected text.",
+  "activationCommands": {
+    "atom-workspace": [
+      "sql-list:Quote Each Line"
+      ,"sql-list:Unquote Each Line"
+      ,"sql-list:Comment Each Line"
+      ,"sql-list:Uncomment Each Line"
+      ,"sql-list:Add Leading Commas"
+      ,"sql-list:Remove Leading Commas"
+      ,"sql-list:Add Trailing Commas"
+      ,"sql-list:Remove Trailing Commas"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caglartoklu/atom-sql-list.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "homepage": "https://github.com/caglartoklu/atom-sql-list",
+  "bugs": {
+    "url": "https://github.com/caglartoklu/atom-sql-list/issues"
+  }
+}

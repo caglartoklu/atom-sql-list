@@ -1,0 +1,49 @@
+# 'context-menu':
+#   'atom-text-editor': [
+#     {
+#       'label': 'Quote Each Line'
+#       'command': 'sql-list:Quote Each Line'
+#     }
+#   ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'sql-list'
+      'submenu': [
+        {
+          'label': 'Quote Each Line'
+          'command': 'sql-list:Quote Each Line'
+        },
+        {
+          'label': 'Unquote Each Line'
+          'command': 'sql-list:Unquote Each Line'
+        },
+        {
+          'label': 'Comment Each Line'
+          'command': 'sql-list:Comment Each Line'
+        },
+        {
+          'label': 'Uncomment Each Line'
+          'command': 'sql-list:Uncomment Each Line'
+        },
+        {
+          'label': 'Add Leading Commas'
+          'command': 'sql-list:Add Leading Commas'
+        },
+        {
+          'label': 'Remove Leading Commas'
+          'command': 'sql-list:Remove Leading Commas'
+        },
+        {
+          'label': 'Add Trailing Commas'
+          'command': 'sql-list:Add Trailing Commas'
+        },
+        {
+          'label': 'Remove Trailing Commas'
+          'command': 'sql-list:Remove Trailing Commas'
+        }
+      ]
+    ]
+  }
+]
