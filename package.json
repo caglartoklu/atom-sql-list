@@ -1,7 +1,7 @@
 {
   "name": "atom-sql-list",
   "main": "./lib/sql-list",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Various SQL code generators and processors for selected text.",
   "activationCommands": {
     "atom-workspace": [
