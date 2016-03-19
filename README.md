@@ -3,6 +3,8 @@
 Various SQL code generators and processors for selected text.
 Separate block selection is supported.
 
+![sql-list-1](https://cloud.githubusercontent.com/assets/2071639/13898959/06d57d4a-edeb-11e5-8995-9e5d8a38c03d.gif)
+
 ## Usage
 
 The following commands can be accessed via [Command Palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette):
