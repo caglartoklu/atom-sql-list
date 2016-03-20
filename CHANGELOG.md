@@ -1,3 +1,6 @@
+## 0.3.1 2016-03-20
+* Updated program description.
+
 ## 0.3.0 2016-03-20
 * Added quote escape and de-escape in quote commands.
 

@@ -2,7 +2,7 @@
   "name": "atom-sql-list",
   "main": "./lib/sql-list",
   "version": "0.3.0",
-  "description": "Various SQL code generators and processors for selected text.",
+  "description": "Various SQL related text and list processing commands.",
   "activationCommands": {
     "atom-workspace": [
       "sql-list:Quote Each Line",
