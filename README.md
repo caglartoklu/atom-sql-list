@@ -1,6 +1,6 @@
 # atom-sql-list
 
-Various SQL code generators and processors for selected text.
+Various SQL related text and list processing commands.
 Separate block selection is supported.
 
 ![sql-list-1](https://cloud.githubusercontent.com/assets/2071639/13898959/06d57d4a-edeb-11e5-8995-9e5d8a38c03d.gif)
@@ -9,29 +9,37 @@ Separate block selection is supported.
 
 The following commands can be accessed via [Command Palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette):
 
-### Quote Each Line
-Quotes each selected line with a single apostrophe (`'`) .
+**Quote Each Line**
 
-### Unquote Each Line
+Quotes each selected line with a single apostrophe `'` .
+
+**Unquote Each Line**
+
 Remove single quote from selected lines.
 
-### Comment Each Line
+**Comment Each Line**
+
 Comments selected lines with `--` characters.
 
-### Uncomment Each Line
+**Uncomment Each Line**
+
 Removes leading `--` characters from selected lines.
 
-### Add Leading Commas
-Adds leading comma (`,`) to the selected lines.
+**Add Leading Commas**
 
-### Remove Leading Commas
-Removes leading comma (`,`) from the selected lines.
+Adds leading comma `,` to the selected lines.
 
-### Add Trailing Commas
-Adds trailing comma (`,`) to the selected lines.
+**Remove Leading Commas**
 
-### Remove Trailing Commas
-Removes trailing comma (`,`) from the selected lines.
+Removes leading comma `,` from the selected lines.
+
+**Add Trailing Commas**
+
+Adds trailing comma `,` to the selected lines.
+
+**Remove Trailing Commas**
+
+Removes trailing comma `,` from the selected lines.
 
 
 ## Installation
@@ -50,7 +58,7 @@ None, at least for now.
 
 ## Changelog
 
-MIT, see the [CHANGELOG.md](CHANGELOG.md) file.
+See the [CHANGELOG.md](CHANGELOG.md) file.
 
 ## License
 
