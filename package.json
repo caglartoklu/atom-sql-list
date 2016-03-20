@@ -1,7 +1,7 @@
 {
   "name": "atom-sql-list",
   "main": "./lib/sql-list",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Various SQL related text and list processing commands.",
   "activationCommands": {
     "atom-workspace": [
