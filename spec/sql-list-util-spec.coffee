@@ -74,7 +74,7 @@ describe "sql-list-util test suite", ->
     expect(SqlListUtil.removeIfEndsWith("", "x")).toBe ""
 
 
-# ltrim
+  # ltrim
 
   it "removes all the leading whitespace", ->
     expect(SqlListUtil.ltrim(" abc")).toBe "abc"
@@ -83,7 +83,7 @@ describe "sql-list-util test suite", ->
     expect(SqlListUtil.ltrim(" \t \r \n  abc  ")).toBe "abc  "
 
 
-# rtrim
+  # rtrim
 
   it "removes all the trailing whitespace", ->
     expect(SqlListUtil.rtrim("abc ")).toBe "abc"
@@ -101,8 +101,7 @@ describe "sql-list-util test suite", ->
     expect(SqlListUtil.reverse("\t abc \t")).toBe "\t cba \t"
 
 
-# extractLeadingWhiteSpace
-
+  # extractLeadingWhiteSpace
   it "extracts the leading whitespace from a string", ->
     expect(SqlListUtil.extractLeadingWhiteSpace("a")).toBe ""
     expect(SqlListUtil.extractLeadingWhiteSpace(" a")).toBe " "
@@ -110,10 +109,29 @@ describe "sql-list-util test suite", ->
     expect(SqlListUtil.extractLeadingWhiteSpace(" \t \r \n  a ")).toBe " \t \r \n  "
 
 
-# extractTrailingWhiteSpace
+  # extractTrailingWhiteSpace
 
   it "extracts the leading whitespace from a string", ->
     expect(SqlListUtil.extractTrailingWhiteSpace("a")).toBe ""
     expect(SqlListUtil.extractTrailingWhiteSpace("a ")).toBe " "
     expect(SqlListUtil.extractTrailingWhiteSpace(" aa  ")).toBe "  "
     expect(SqlListUtil.extractTrailingWhiteSpace(" a \t \r \n  ")).toBe " \t \r \n  "
+
+
+  # escapeQuote
+
+  it "escapes a single quote", ->
+    expect(SqlListUtil.escapeQuote("")).toBe ""
+    expect(SqlListUtil.escapeQuote("abc")).toBe "abc"
+    expect(SqlListUtil.escapeQuote("Guns N' Roses")).toBe "Guns N'' Roses"
+    expect(SqlListUtil.escapeQuote("'Guns N'' Roses'")).toBe "''Guns N'''' Roses''"
+
+
+  # deEscapeQuote
+
+  it "de-escapes a single quote", ->
+    expect(SqlListUtil.deEscapeQuote("")).toBe ""
+    expect(SqlListUtil.deEscapeQuote("abc")).toBe "abc"
+    expect(SqlListUtil.deEscapeQuote("Guns N' Roses")).toBe "Guns N' Roses"
+    expect(SqlListUtil.deEscapeQuote("Guns N'' Roses")).toBe "Guns N' Roses"
+    expect(SqlListUtil.deEscapeQuote("''Guns N'''' Roses''")).toBe "'Guns N'' Roses'"

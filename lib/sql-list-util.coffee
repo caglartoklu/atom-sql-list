@@ -107,3 +107,15 @@ class SqlListUtil
       else
         break
     return @reverse(buffer)
+
+
+  @escapeQuote: (haystack, quoteChar="'") ->
+    # escapes a quote, ' becomes ''
+    quoteChar = quoteChar[0]  # quote must be one character
+    haystack.replace(/'/g, "''");
+
+
+  @deEscapeQuote: (haystack, quoteChar="'") ->
+    # de-escapes a quote, '' becomes '
+    quoteChar = quoteChar[0]  # quote must be one character
+    haystack.replace(/''/g, "'");

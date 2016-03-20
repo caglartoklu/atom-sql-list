@@ -30,6 +30,7 @@ module.exports = SqlList =
     trailingWhiteSpace = SqlListUtil.extractTrailingWhiteSpace(haystack)
     haystack = SqlListUtil.ltrim(haystack)
     haystack = SqlListUtil.rtrim(haystack)
+    haystack = SqlListUtil.escapeQuote(haystack)
     haystack = "'#{haystack}'"
     haystack = leadingWhiteSpace + haystack + trailingWhiteSpace
     return haystack
@@ -56,6 +57,7 @@ module.exports = SqlList =
       haystack = haystack[1..]
       haystack = haystack[..-2]
 
+    haystack = SqlListUtil.deEscapeQuote(haystack)
     haystack = leadingWhiteSpace + haystack + trailingWhiteSpace
     return haystack
 

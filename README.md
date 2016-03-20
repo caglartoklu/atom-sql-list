@@ -11,11 +11,15 @@ The following commands can be accessed via [Command Palette](https://atom.io/doc
 
 **Quote Each Line**
 
-Quotes each selected line with a single apostrophe `'` .
+Quotes each selected line with a single quote `'` .
+This command minds the single quote `'` characters and escapes them.
+That is, `My friend's computer` becomes `'My friend''s computer'`.
 
 **Unquote Each Line**
 
 Remove single quote from selected lines.
+This command minds the single quote `'` characters and de-escapes them.
+That is, `'My friend''s computer'` becomes `My friend's computer`.
 
 **Comment Each Line**
 
@@ -31,7 +35,7 @@ Adds leading comma `,` to the selected lines.
 
 **Remove Leading Commas**
 
-Removes leading comma `,` from the selected lines.
+Removes leading comma `,` from the selected lines, if exists.
 
 **Add Trailing Commas**
 
@@ -39,7 +43,7 @@ Adds trailing comma `,` to the selected lines.
 
 **Remove Trailing Commas**
 
-Removes trailing comma `,` from the selected lines.
+Removes trailing comma `,` from the selected lines, if exists.
 
 
 ## Installation
