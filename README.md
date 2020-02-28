@@ -3,6 +3,9 @@
 Various SQL related text and list processing commands.
 Separate block selection is supported.
 
+Atom package link:
+https://atom.io/packages/atom-sql-list
+
 ![sql-list-1](https://cloud.githubusercontent.com/assets/2071639/13898959/06d57d4a-edeb-11e5-8995-9e5d8a38c03d.gif)
 
 ## Usage
